@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Create Bracket" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            <h1>Create a Bracket</h1>
+            <lightning-textarea label="Players"></lightning-textarea>
+            <lightning-button variant="brand" label="Generate" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+        </div>
+        <div id="output_div" class="slds-m-around_medium" if:true={generateIsClicked}></div>
+    </lightning-card>
+</template>
